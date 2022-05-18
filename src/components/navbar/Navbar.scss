@@ -1,0 +1,31 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+.navbar-container{
+      display: flex;
+      list-style: none;
+      margin-right: 5vw;
+            li{
+                  list-style: none;
+                  margin-right: 3vw;
+                  a{
+                        text-decoration: none;
+                        color: white;
+                        font-family: 'Ubuntu', sans-serif;
+                        font-size: 1.1rem;
+                        &:hover{
+                              color: rgb(29, 162, 219);
+                              transition: color .2s ease-in-out;
+                        }
+                  }
+            }
+}
+
+@media (max-width: 600px) {
+      .navbar-container{
+            display: none;
+      }
+}

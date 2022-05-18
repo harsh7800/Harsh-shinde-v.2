@@ -1,0 +1,105 @@
+.scroll-wrapper {
+  width: 100vw;
+  height: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scroll-wrapper .scroll-container {
+  width: 20px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: border .3s ease-in;
+  transition: border .3s ease-in;
+  margin-top: 2em;
+}
+
+.scroll-wrapper .scroll-container:hover {
+  border: 2px solid #d325b0;
+  -webkit-transition: border .3s ease-in;
+  transition: border .3s ease-in;
+}
+
+.scroll-wrapper .scroll-container .scroll-down {
+  background-color: white;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  -webkit-animation: scroll-down 1s ease-in-out infinite;
+          animation: scroll-down 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes scroll-down {
+  from {
+    margin-top: 0rem;
+    opacity: 0;
+  }
+  to {
+    margin-top: 1.5rem;
+    opacity: 100;
+  }
+}
+
+@keyframes scroll-down {
+  from {
+    margin-top: 0rem;
+    opacity: 0;
+  }
+  to {
+    margin-top: 1.5rem;
+    opacity: 100;
+  }
+}
+
+@media (max-width: 600px) {
+  .scroll-wrapper {
+    width: 100vw;
+    height: 7em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .scroll-wrapper .scroll-container {
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: border .3s ease-in;
+    transition: border .3s ease-in;
+    margin-top: 1em;
+  }
+  .scroll-wrapper .scroll-container:hover {
+    border: 2px solid #d325b0;
+    -webkit-transition: border .3s ease-in;
+    transition: border .3s ease-in;
+  }
+  .scroll-wrapper .scroll-container .scroll-down {
+    background-color: white;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    -webkit-animation: scroll-down 1s ease-in-out infinite;
+            animation: scroll-down 1s ease-in-out infinite;
+  }
+}
+/*# sourceMappingURL=scrolldown.css.map */

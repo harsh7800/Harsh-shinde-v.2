@@ -1,0 +1,39 @@
+.title{
+      width: 100vw;
+      color: white;
+      text-align: center;
+      position: absolute;
+      top: 10em;
+      p{
+            font-size: 1.4em;
+            font-family: 'Josefin Sans', sans-serif;
+            font: 400;
+      }
+      h1{
+            // width: auto;
+            margin-top: -2rem;
+            font-size: 6em;
+            font-family: 'Koulen', cursive;
+      }
+}
+
+@media (max-width: 600px) {
+      .title{
+      width: 100vw;
+      color: white;
+      text-align: center;
+      position: absolute;
+      top: 8rem;
+      p{
+            font-size: 1.4rem;
+            font-family: 'Josefin Sans', sans-serif;
+            font: 400;
+      }
+      h1{
+            // width: auto;
+            margin-top: -.5rem;
+            font-size: 4rem;
+            font-family: 'Koulen', cursive;
+      }
+}
+}

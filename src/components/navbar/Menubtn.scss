@@ -1,0 +1,22 @@
+.menu {
+  display: none;
+  border: none;
+  margin-right: 2vw;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block;
+    cursor: pointer;
+    border: none;
+    margin-right: 2vw;
+    background: none;
+    color: white;
+    font-size: 1.7rem;
+    margin-top: -0.5rem;
+  }
+}

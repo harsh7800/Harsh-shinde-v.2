@@ -1,0 +1,17 @@
+.logo{
+     border-radius: 50%;
+     width: 4em;
+     height: 3em;
+     margin-left: 1rem;
+     background-color: white;
+}
+
+@media (max-width: 600px) {
+     .logo{
+          border-radius: 50%;
+          width: 3.3em;
+          height: 2.5em;
+          margin-left: 1rem;
+          background-color: white;
+     }
+}
