@@ -1,4 +1,4 @@
-.about-title {
+.project-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,14 +12,14 @@
   margin-top: 3em;
 }
 
-.about-title h1 {
+.project-title h1 {
   text-align: center;
   font-size: 3rem;
   color: black;
   font-family: "Bebas Neue", cursive;
 }
 
-.about-title h1::after {
+.project-title h1::after {
   content: "";
   position: absolute;
   height: 5px;
@@ -33,7 +33,7 @@
 }
 
 @media (max-width: 600px) {
-  .about-title {
+  .project-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -45,13 +45,13 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .about-title h1 {
+  .project-title h1 {
     text-align: center;
     font-size: 2.5rem;
     color: black;
     font-family: "Bebas Neue", cursive;
   }
-  .about-title h1::after {
+  .project-title h1::after {
     content: "";
     position: absolute;
     height: 5px;
@@ -64,4 +64,4 @@
     border-radius: 5px;
   }
 }
-/*# sourceMappingURL=aboutTitle.css.map */
+/*# sourceMappingURL=projectTitle.css.map */
