@@ -1,1 +1,321 @@
-/* No CSS *//*# sourceMappingURL=Projects.css.map */
+.projects {
+  width: 100vw;
+  margin-top: 10em;
+}
+
+.projects .project-1 {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .project-1 h3 {
+  margin-top: 1em;
+  font-size: 2em;
+  font-family: "Bebas Neue", cursive;
+}
+
+.projects .project-1 p {
+  margin-top: 2em;
+  width: 38vw;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-right: 2em;
+}
+
+.projects .project-1 img {
+  min-width: 45em;
+  width: 60em;
+}
+
+.projects .project-2 {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .project-2 h3 {
+  margin-left: 1em;
+  text-align: left;
+  margin-top: 1em;
+  font-size: 2em;
+  font-family: "Bebas Neue", cursive;
+}
+
+.projects .project-2 p {
+  margin-top: 2em;
+  text-align: left;
+  width: 40vw;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-left: 2em;
+  margin-right: -3em;
+}
+
+.projects .project-2 img {
+  min-width: 45em;
+  width: 60em;
+}
+
+.projects .project-3 {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .project-3 h3 {
+  margin-top: 1em;
+  font-size: 2em;
+  font-family: "Bebas Neue", cursive;
+  margin-left: -1em;
+}
+
+.projects .project-3 p {
+  margin-top: 2em;
+  margin-left: -2em;
+  width: 38vw;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-right: 2em;
+}
+
+.projects .project-3 img {
+  min-width: 45em;
+  width: 60em;
+}
+
+@media (min-width: 600px) and (max-width: 1140px) {
+  .projects {
+    width: 100vw;
+    margin-top: 10em;
+  }
+  .projects .project-1 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .project-1 h3 {
+    margin-top: -1em;
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+  }
+  .projects .project-1 p {
+    border-bottom: 2px ridge black;
+    margin-top: 2em;
+    width: 85vw;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 2em;
+  }
+  .projects .project-1 img {
+    min-width: 20em;
+    width: 40em;
+  }
+  .projects .project-2 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5em;
+  }
+  .projects .project-2 h3 {
+    margin-top: -1em;
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+  }
+  .projects .project-2 p {
+    border-bottom: 2px ridge black;
+    margin-top: 2em;
+    width: 85vw;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 2em;
+  }
+  .projects .project-2 img {
+    min-width: 20em;
+    width: 40em;
+  }
+  .projects .project-3 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5em;
+  }
+  .projects .project-3 h3 {
+    margin-top: -1em;
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+  }
+  .projects .project-3 p {
+    border-bottom: 2px ridge black;
+    margin-top: 2em;
+    width: 85vw;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 2em;
+  }
+  .projects .project-3 img {
+    min-width: 20em;
+    width: 40em;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects {
+    width: 100vw;
+    margin-top: 5em;
+  }
+  .projects .project-1 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projects .project-1 h3 {
+    margin-top: -1em;
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+  }
+  .projects .project-1 p {
+    border-bottom: 2px ridge black;
+    margin-top: 2em;
+    width: 85vw;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 2em;
+  }
+  .projects .project-1 img {
+    min-width: 10em;
+    width: 25em;
+  }
+  .projects .project-2 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5em;
+  }
+  .projects .project-2 h3 {
+    margin-top: -1em;
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+  }
+  .projects .project-2 p {
+    border-bottom: 2px ridge black;
+    margin-top: 2em;
+    width: 85vw;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 2em;
+  }
+  .projects .project-2 img {
+    min-width: 10em;
+    width: 25em;
+  }
+  .projects .project-3 {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5em;
+  }
+  .projects .project-3 h3 {
+    margin-top: -1em;
+    font-size: 2em;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+  }
+  .projects .project-3 p {
+    border-bottom: 2px ridge black;
+    margin-top: 2em;
+    width: 85vw;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-right: 2em;
+  }
+  .projects .project-3 img {
+    min-width: 10em;
+    width: 25em;
+  }
+}
+/*# sourceMappingURL=Projects.css.map */

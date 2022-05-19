@@ -1,0 +1,249 @@
+.projects{
+      width: 100vw;
+      margin-top: 10em;
+      .project-1{
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            h3{
+                  margin-top: 1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+            }
+            p{
+                  margin-top: 2em;
+                  width: 38vw;
+                  // margin-left: -3em;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-right: 2em;
+            }
+            img{
+                  min-width: 45em;
+                  width: 60em;
+            }
+      }
+      .project-2{
+            width: 100vw;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+             h3{
+                   margin-left: 1em;
+                   text-align: left;
+                  margin-top: 1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+            }
+            p{
+                  margin-top: 2em;
+                  text-align: left;
+                  width: 40vw;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-left: 2em;
+                  margin-right: -3em;
+            }
+            img{
+                  min-width: 45em;
+                  width: 60em;
+            }
+      }
+      .project-3{
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            h3{
+                  margin-top: 1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+                  margin-left: -1em;
+            }
+            p{
+                  margin-top: 2em;
+                  margin-left: -2em;
+                  width: 38vw;
+                  // margin-left: -3em;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-right: 2em;
+            }
+            img{
+                  min-width: 45em;
+                  width: 60em;
+            }
+      }
+}
+
+
+@media (min-width: 600px) and (max-width: 1140px) {
+      .projects{
+      width: 100vw;
+      margin-top: 10em;
+      .project-1{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+                  margin-top: -1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+                  text-align: center;
+            }
+            p{
+                  border-bottom: 2px ridge black;
+                  margin-top: 2em;
+                  width: 85vw;
+                  text-align: center;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-right: 2em;
+            }
+            img{
+                  min-width: 20em;
+                  width: 40em;
+            }
+      }
+     .project-2{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5em;
+            h3{
+                  margin-top: -1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+                  text-align: center;
+            }
+            p{
+                  border-bottom: 2px ridge black;
+                  margin-top: 2em;
+                  width: 85vw;
+                  text-align: center;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-right: 2em;
+            }
+            img{
+                  min-width: 20em;
+                  width: 40em;
+            }
+
+      }
+
+
+      .project-3{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5em;
+            h3{
+                  margin-top: -1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+                  text-align: center;
+            }
+            p{
+                  border-bottom: 2px ridge black;
+                  margin-top: 2em;
+                  width: 85vw;
+                  text-align: center;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-right: 2em;
+            }
+            img{
+                  min-width: 20em;
+                  width: 40em;
+            }
+        }
+      }
+}
+
+
+@media (max-width: 600px) {
+       .projects{
+      width: 100vw;
+      margin-top: 5em;
+      .project-1{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h3{
+                  margin-top: -1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+                  text-align: center;
+            }
+            p{
+                  border-bottom: 2px ridge black;
+                  margin-top: 2em;
+                  width: 85vw;
+                  text-align: center;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-right: 2em;
+            }
+            img{
+                  min-width: 10em;
+                  width: 25em;
+            }
+      }
+     .project-2{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5em;
+            h3{
+                  margin-top: -1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+                  text-align: center;
+            }
+            p{
+                  border-bottom: 2px ridge black;
+                  margin-top: 2em;
+                  width: 85vw;
+                  text-align: center;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-right: 2em;
+            }
+            img{
+                  min-width: 10em;
+                  width: 25em;
+            }
+
+      }
+
+
+      .project-3{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5em;
+            h3{
+                  margin-top: -1em;
+                  font-size: 2em;
+                  font-family: "Bebas Neue", cursive;
+                  text-align: center;
+            }
+            p{
+                  border-bottom: 2px ridge black;
+                  margin-top: 2em;
+                  width: 85vw;
+                  text-align: center;
+                  font-family: 'Josefin Sans', sans-serif;
+                  margin-right: 2em;
+            }
+            img{
+                  min-width: 10em;
+                  width: 25em;
+            }
+        }
+      }
+}

@@ -1,11 +1,15 @@
 import React from 'react'
+import './Projects.css'
+import spaceTourists from './laptop-space.png'
+import loopStudio from './laptop-loopstudio.png'
+import snap from './laptop-snap.png'
 
 const Projects = () => {
   return (
     <>
-      <div className="projects-title">
+      <div className="projects">
         <div className="project-1">
-          <img src="" alt="" />
+          <img src={spaceTourists} alt=""/>
           <span>
             <h3>Space-Tourists</h3>
             <p>
@@ -17,7 +21,7 @@ const Projects = () => {
           </span>
         </div>
         <div className="project-2">
-          <img src="" alt=""/>
+          <img src={loopStudio} alt=""/>
           <span>
             <h3>Loop Studios</h3>
             <p>
@@ -27,9 +31,9 @@ const Projects = () => {
           </span>
         </div>
         <div className="project-3">
-          <img src="" alt="" />
+          <img src={snap} alt="" />
           <span>
-            <h3>Space-Tourists</h3>
+            <h3>SNAP</h3>
             <p>
               This the challenge i took from frontend mentor just to challenge
               my code skill , its just the basic website which gives your a free
