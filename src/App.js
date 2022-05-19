@@ -12,6 +12,8 @@ import Info from "./components/about/Info";
 import Skills from "./components/about/Skills";
 import ProjectTitle from "./components/projects/ProjectTitle";
 import Projects from "./components/projects/Projects";
+import ContactTitle from "./components/contact/ContactTitle";
+import ContactForm from "./components/contact/ContactForm";
 // import { BrowserRouter as Router } from "react-router-dom";
 // import React from 'react'
 
@@ -44,6 +46,10 @@ export default function App() {
           <ProjectTitle/>
           <Projects/>
         </div>
+      </section>
+      <section className="contact-wrapper">
+        <ContactTitle />
+        <ContactForm/>
       </section>
     </>
   );
