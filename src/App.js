@@ -10,35 +10,40 @@ import ScrollDown from "./components/header/ScrollDown";
 import AboutTitle from "./components/about/AboutTitle";
 import Info from "./components/about/Info";
 import Skills from "./components/about/Skills";
+import ProjectTitle from "./components/projects/ProjectTitle";
+import Projects from "./components/projects/Projects";
 // import { BrowserRouter as Router } from "react-router-dom";
 // import React from 'react'
 
 export default function App() {
   return (
     <>
-      <div className="home-wrapper">
+      <div className="home-wrapper"> 
         <nav>
-          <Logo />
-          <NavBar />
-          <MenuButton />
+          <Logo/>
+          <NavBar/>
+          <MenuButton/>
         </nav>
         <main>
           <section className="home">
-            <Title />
-            <Description />
+            <Title/>
+            <Description/>
           </section>
-          <ScrollDown />
+          <ScrollDown/>
         </main>
       </div>
       <section className="about-me">
         <AboutTitle />
         <div className="info-skills">
-          <Info />
+          <Info/>
           <Skills/>
         </div>
       </section>
-      <section className="projects">
-
+      <section className="projects-wrapper">
+        <div className="projects">
+          <ProjectTitle/>
+          <Projects/>
+        </div>
       </section>
     </>
   );

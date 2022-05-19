@@ -3,7 +3,7 @@ import React from 'react'
 const Projects = () => {
   return (
     <>
-      <div className="projects-wrapper">
+      <div className="projects-title">
         <div className="project-1">
           <img src="" alt="" />
           <span>

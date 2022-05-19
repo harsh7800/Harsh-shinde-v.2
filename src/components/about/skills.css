@@ -106,8 +106,8 @@
         -ms-flex-align: center;
             align-items: center;
     margin-right: 5em;
-    -ms-grid-columns: 25vw 25vw 25vw;
-        grid-template-columns: 25vw 25vw 25vw;
+    -ms-grid-columns: 27vw 27vw 27vw;
+        grid-template-columns: 27vw 27vw 27vw;
     grid-gap: 2em;
     -ms-grid-rows: 40px 40px 40px 40px;
         grid-template-rows: 40px 40px 40px 40px;

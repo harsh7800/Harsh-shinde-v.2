@@ -26,10 +26,17 @@ nav{
       height: 5em;
 }
 
-.info-skills{
-      display: flex;
-      justify-content: space-between;
-      margin-top: 3em;
+
+.about-me{
+      .info-skills{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3em;
+      }
+}
+
+.projects-wrapper{
+      margin-top: 10em;
 }
 
 
@@ -43,11 +50,17 @@ nav{
             }
       }
 
+      .about-me{
       .info-skills{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin-top: -3em;
+}
+}
+
+.projects-wrapper{
+      margin-top: 5em;
 }
 }
 
@@ -69,11 +82,18 @@ nav{
                   justify-content: center;
             }
       }
+
+      .about-me{
       .info-skills{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin-top: -3em;
+}
+}
+
+.projects-wrapper{
+      margin-top: 5em;
 }
       
 }
