@@ -1,0 +1,13 @@
+p {
+  color: white;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-top: 3em;
+}
+
+@media (min-width: 600px) and (max-width: 1140px) {
+  p {
+    margin-top: 1em;
+  }
+}
+/*# sourceMappingURL=copyright.css.map */

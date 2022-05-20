@@ -1,0 +1,63 @@
+.social-handle-container{
+      height: 10em;
+      margin-right: 5em;
+      h2{
+            color: white;
+            font-family: "Bebas Neue", cursive;
+            font-size: 2em;
+      }
+
+      .social-handles{
+            margin-top: 1.5em;
+
+       #instagram{
+            color: white;
+            font-size: 1.8em;
+            margin-right: 1em;
+            &:hover{
+                  color: rgb(210, 57, 151);
+            }
+      }
+      #github{
+            color: white;
+            font-size: 1.8em;
+            margin-right: 1em;
+            &:hover{
+                  color: grey;
+            }
+      }
+      #whatsapp{
+            color: white;
+            font-size: 1.8em;
+            margin-right: 1em;
+            &:hover{
+                  color: rgb(44, 220, 44);
+            }
+      }
+      }
+}
+
+@media (min-width: 600px) and (max-width: 1140px) {
+      .social-handle-container{
+            width: 25vw;
+      height: 10em;
+      margin-right: 1em;
+      text-align: center;
+      h2{
+            color: white;
+            font-family: "Bebas Neue", cursive;
+            font-size: 1.5em;
+      }
+      #instagram, #github, #whatsapp{
+            font-size: 1em;
+      }
+}
+}
+
+@media (max-width: 600px) {
+      .social-handle-container{
+            width: 90vw;
+            text-align: left;
+            margin-left: 1em;
+      }
+}

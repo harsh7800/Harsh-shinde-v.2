@@ -22,8 +22,10 @@
 .projects .project-1 p {
   margin-top: 2em;
   width: 38vw;
+  color: black;
   font-family: 'Josefin Sans', sans-serif;
   margin-right: 2em;
+  text-align: left;
 }
 
 .projects .project-1 img {
@@ -60,6 +62,8 @@
   font-family: 'Josefin Sans', sans-serif;
   margin-left: 2em;
   margin-right: -3em;
+  color: black;
+  text-align: left;
 }
 
 .projects .project-2 img {
@@ -88,6 +92,8 @@
   margin-top: 2em;
   margin-left: -2em;
   width: 38vw;
+  color: black;
+  text-align: left;
   font-family: 'Josefin Sans', sans-serif;
   margin-right: 2em;
 }
@@ -201,6 +207,8 @@
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     margin-right: 2em;
+    color: black;
+    text-align: left;
   }
   .projects .project-3 img {
     min-width: 20em;
@@ -242,6 +250,9 @@
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     margin-right: 2em;
+    color: black;
+    text-align: left;
+    margin-left: .5em;
   }
   .projects .project-1 img {
     min-width: 10em;
@@ -277,6 +288,8 @@
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     margin-right: 2em;
+    color: black;
+    text-align: left;
   }
   .projects .project-2 img {
     min-width: 10em;
@@ -312,6 +325,9 @@
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     margin-right: 2em;
+    color: black;
+    text-align: left;
+    margin-left: 1em;
   }
   .projects .project-3 img {
     min-width: 10em;

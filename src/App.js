@@ -14,43 +14,53 @@ import ProjectTitle from "./components/projects/ProjectTitle";
 import Projects from "./components/projects/Projects";
 import ContactTitle from "./components/contact/ContactTitle";
 import ContactForm from "./components/contact/ContactForm";
+import Name from "./components/footer/Name";
+import SocHandle from "./components/footer/SocHandle";
+import Copyright from "./components/footer/Copyright";
 // import { BrowserRouter as Router } from "react-router-dom";
 // import React from 'react'
 
 export default function App() {
   return (
     <>
-      <div className="home-wrapper"> 
+      <div className="home-wrapper">
         <nav>
-          <Logo/>
-          <NavBar/>
-          <MenuButton/>
+          <Logo />
+          <NavBar />
+          <MenuButton />
         </nav>
         <main>
           <section className="home">
-            <Title/>
-            <Description/>
+            <Title />
+            <Description />
           </section>
-          <ScrollDown/>
+          <ScrollDown />
         </main>
       </div>
       <section className="about-me">
         <AboutTitle />
         <div className="info-skills">
-          <Info/>
-          <Skills/>
+          <Info />
+          <Skills />
         </div>
       </section>
       <section className="projects-wrapper">
         <div className="projects">
-          <ProjectTitle/>
-          <Projects/>
+          <ProjectTitle />
+          <Projects />
         </div>
       </section>
       <section className="contact-wrapper">
         <ContactTitle />
-        <ContactForm/>
+        <ContactForm />
       </section>
+      <footer className="footer-wrapper">
+        <div className="footer">
+          <Name/>
+          <SocHandle/>
+        </div>
+        <Copyright/>
+      </footer>
     </>
   );
 }

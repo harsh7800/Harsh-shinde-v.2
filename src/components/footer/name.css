@@ -1,0 +1,53 @@
+.name-container {
+  height: 10em;
+  margin-left: 5em;
+}
+
+.name-container h2 {
+  color: white;
+  font-size: 2em;
+  font-family: "Bebas Neue", cursive;
+}
+
+.name-container p {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 50vw;
+  color: white;
+  margin-top: 1.5em;
+  text-align: left;
+}
+
+@media (min-width: 600px) and (max-width: 1140px) {
+  .name-container {
+    width: 50vw;
+    height: 10em;
+    margin-left: 2em;
+  }
+  .name-container h2 {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Bebas Neue", cursive;
+  }
+  .name-container p {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 50vw;
+    color: white;
+    margin-top: 1.5em;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .name-container {
+    width: 90vw;
+    margin-left: 1em;
+  }
+  .name-container h2 {
+    text-align: left;
+  }
+  .name-container p {
+    width: 90vw;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=name.css.map */

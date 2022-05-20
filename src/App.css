@@ -49,6 +49,24 @@ nav {
   margin-top: 10em;
 }
 
+.footer-wrapper {
+  background-color: black;
+  width: 100vw;
+  height: 15em;
+  margin-top: 10em;
+}
+
+.footer-wrapper .footer {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid grey;
+}
+
 @media (min-width: 600px) and (max-width: 1140px) {
   main section {
     width: 100vw;
@@ -78,6 +96,21 @@ nav {
   }
   .projects-wrapper {
     margin-top: 5em;
+  }
+  .footer-wrapper {
+    margin-top: 10em;
+    width: 100vw;
+    height: 15em;
+  }
+  .footer-wrapper .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: black;
+    margin-top: 2em;
   }
 }
 
@@ -118,6 +151,22 @@ nav {
   }
   .projects-wrapper {
     margin-top: 5em;
+  }
+  .footer-wrapper {
+    margin-top: 10em;
+    width: 100vw;
+    height: 27em;
+  }
+  .footer-wrapper .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: black;
+    margin-left: 1em;
   }
 }
 /*# sourceMappingURL=App.css.map */
