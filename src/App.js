@@ -24,6 +24,8 @@ export default function App() {
   return (
     <>
       <div className="home-wrapper">
+        {" "}
+        {/*----- Home section-------*/}
         <nav>
           <Logo />
           <NavBar />
@@ -37,29 +39,35 @@ export default function App() {
           <ScrollDown />
         </main>
       </div>
-      <section className="about-me">
-        <AboutTitle />
+      <section className="about-me">        {/*----- About me  section-------*/}
+          <AboutTitle />
+        
         <div className="info-skills">
-          <Info />
-          <Skills />
+            <Info />
+            <Skills />
         </div>
       </section>
       <section className="projects-wrapper">
+
+        {/*----- Projects section-------*/}
         <div className="projects">
-          <ProjectTitle />
+            <ProjectTitle />
           <Projects />
         </div>
       </section>
-      <section className="contact-wrapper">
-        <ContactTitle />
+      <section
+        className="contact-wrapper">
+        {/*----- Contact section-------*/}
+          <ContactTitle />
         <ContactForm />
       </section>
       <footer className="footer-wrapper">
+        {/*----- Footer section-------*/}
         <div className="footer">
-          <Name/>
-          <SocHandle/>
+          <Name />
+          <SocHandle />
         </div>
-        <Copyright/>
+        <Copyright />
       </footer>
     </>
   );

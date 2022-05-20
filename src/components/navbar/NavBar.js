@@ -4,23 +4,23 @@ import './Navbar.css'
 
 const NavBar = () => {
       return (
-      <>    
-         <ul className="navbar-container">
-               <li>
-                     <a href="#home">Home</a>
-               </li>
-               <li>
-                     <a href="#about-me">About me</a>
-               </li>
-               <li>
-                     <a href="#projects">Projects</a>
-               </li>
-               <li>
-                     <a href="#contact-me">Contact me</a>
-               </li>
-         </ul>
-      </>
-  )
+        <>
+          <ul className="navbar-container" data-aos="fade-up">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about-me">About me</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#contact-me">Contact me</a>
+            </li>
+          </ul>
+        </>
+      );
 }
 
 export default NavBar

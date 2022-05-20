@@ -4,10 +4,10 @@ import './logo.css'
 
 const Logo = () => {
   return (
-        <>
-        <img src={logo} alt="" className='logo'/>
-        </>
-  )
+    <>
+      <img src={logo} alt="" className="logo" data-aos="fade-up" />
+    </>
+  );
 }
 
 export default Logo

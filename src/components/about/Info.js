@@ -4,7 +4,7 @@ import './info.css'
 const Info = () => {
   return (
     <>
-      <div className="about-info">
+      <div className="about-info" data-aos="fade-right">
         <p>
           * I completed my engineering in Electrical so yeah,you can say that i
           am from a non-coding background. but i dont think that matters until i
@@ -25,8 +25,8 @@ const Info = () => {
           get your work done perfectly.
         </p>
         <p>
-          * I am ready to work for you as a freelancer so, feel free to contact me.
-          I can build your website the way you want it to be.
+          * I am ready to work for you as a freelancer so, feel free to contact
+          me. I can build your website the way you want it to be.
         </p>
       </div>
     </>
