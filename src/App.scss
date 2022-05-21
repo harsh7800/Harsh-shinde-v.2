@@ -1,3 +1,6 @@
+html{
+      scroll-behavior: smooth;
+}
 *{
       margin: 0;
       padding: 0;
@@ -17,13 +20,22 @@ body{
       background-size: cover;
 }
 
-nav{
+.nav-wrapper{
       display: flex;
       flex-shrink: unset;
       justify-content: space-between;
       align-items: center;
       width: 100vw;
       height: 5em;
+      position: fixed;
+      top: 0em;
+      z-index: 9999;
+}
+
+.nav-wrapper.bg{
+      background-color: rgba(255, 255, 255, 0.466);
+      color: black;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
@@ -54,6 +66,11 @@ nav{
 
 
 @media (min-width: 600px) and (max-width: 1140px) {
+      .nav-wrapper.bg{
+      background-color: rgb(255, 255, 255);
+      color: black;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
       main{
             section{
                   width: 100vw;
@@ -97,6 +114,11 @@ nav{
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      .nav-wrapper.bg{
+      background-color: rgb(255, 255, 255);
+      color: black;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 }
 
        main{

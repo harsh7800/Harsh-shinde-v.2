@@ -1,11 +1,14 @@
 import React from 'react'
 import './description.css'
+import { Link } from 'react-scroll';
 
 const Description = () => {
   return (
     <>
-      <div className="description" data-aos="fade-up">
+      <div className="description" data-aos="zoom-in-up">
+        <Link to='Projects' smooth={true} duration={900}>
         <button id="projectsBtn">Projects</button>
+        </Link>
       </div>
     </>
   );

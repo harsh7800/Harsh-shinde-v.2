@@ -5,7 +5,7 @@ import './logo.css'
 const Logo = () => {
   return (
     <>
-      <img src={logo} alt="" className="logo" data-aos="fade-up" />
+      <img src={logo} alt="" className="logo" data-aos="fade-right" />
     </>
   );
 }

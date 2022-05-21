@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +23,7 @@ body {
   background-size: cover;
 }
 
-nav {
+.nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,6 +37,16 @@ nav {
           align-items: center;
   width: 100vw;
   height: 5em;
+  position: fixed;
+  top: 0em;
+  z-index: 9999;
+}
+
+.nav-wrapper.bg {
+  background-color: rgba(255, 255, 255, 0.466);
+  color: black;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .about-me .info-skills {
@@ -68,6 +82,12 @@ nav {
 }
 
 @media (min-width: 600px) and (max-width: 1140px) {
+  .nav-wrapper.bg {
+    background-color: white;
+    color: black;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
   main section {
     width: 100vw;
     display: -webkit-box;
@@ -122,6 +142,12 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+  .home-wrapper .nav-wrapper.bg {
+    background-color: white;
+    color: black;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   main section {
     width: 100vw;

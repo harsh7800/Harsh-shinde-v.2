@@ -1,21 +1,56 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import './contactForm.css'
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_boptanl",
+        "template_zdokctr",
+        form.current,
+        "qE6UzMMYskEB9HTCS"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    form.current.reset()
+  };
   return (
     <>
       <div className="contact-container" data-aos="zoom-in">
-        <form action="" onSubmit="">
+        <form ref={form} onSubmit={sendEmail}>
           <h3>Fill the Following</h3>
-          <input id="name-input" type="text" placeholder="Enter your name" required/>
-          <input id="email-input" type="text" placeholder="Enter your email" required/>
+          <input
+            id="name-input"
+            type="text"
+            placeholder="Enter your name"
+            name='user_name'
+            required
+          />
+          <input
+            id="email-input"
+            type="text"
+            placeholder="Enter your email"
+            name='user_email'
+            required
+          />
           <textarea
-            name="email"
+            name="message"
             id="message-input"
             placeholder="Enter a short message"
             required
           ></textarea>
-          <button className="submitBtn">Submit</button>
+          <input type="submit" value="Send" id='submitBtn' />
         </form>
       </div>
     </>

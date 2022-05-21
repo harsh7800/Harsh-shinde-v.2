@@ -29,10 +29,43 @@
   color: #1da2db;
   -webkit-transition: color .2s ease-in-out;
   transition: color .2s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar-container.bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-right: 5vw;
+}
+
+.navbar-container.bg li {
+  list-style: none;
+  margin-right: 3vw;
+}
+
+.navbar-container.bg li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+}
+
+.navbar-container.bg li a:hover {
+  color: #1da2db;
+  -webkit-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
 }
 
 @media (max-width: 600px) {
   .navbar-container {
+    display: none;
+    background-color: skyblue;
+    z-index: 9999;
+    height: 20em;
+  }
+  .navbar-container.bg {
     display: none;
   }
 }

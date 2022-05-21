@@ -1,6 +1,6 @@
 .description {
   width: 100vw;
-  height: 35em;
+  height: 40em;
   button {
     display: flex;
     justify-content: center;
@@ -8,8 +8,8 @@
     background: none;
     font-size: 1.8em;
     position: relative;
-    top: 26rem;
-    left: 5.5em;
+    top: 31rem;
+    left: 5em;
     transform: rotate3d(4, 1, 1.5, -0.18turn);
     border: 2px solid rgb(54, 151, 186);
     border-radius: 15px;
@@ -25,7 +25,7 @@
 
     &:hover {
       position: absolute;
-      top: 4em;
+      top: 2em;
       left: 1.5em;
       width: 6em;
       background-color: rgb(218, 48, 198);
@@ -50,7 +50,7 @@
       background-color: rgb(54, 151, 186);
       font-size: 1.8em;
       position: relative;
-      top: 30rem;
+      top: 34rem;
       left: 0em;
       transform: scaleX(1) scaleY(0.9) scaleZ(1) rotateX(0deg) rotateY(8deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
       border: 2px solid rgb(54, 151, 186);
@@ -76,7 +76,7 @@
       background-color: rgb(54, 151, 186);
       font-size: 1.8em;
       position: relative;
-      top: 28rem;
+      top: 34rem;
       left: 0em;
       transform: scaleX(1) scaleY(0.9) scaleZ(1) rotateX(0deg) rotateY(8deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
       border: 2px solid rgb(54, 151, 186);

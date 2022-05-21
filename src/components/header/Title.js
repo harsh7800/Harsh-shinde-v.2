@@ -4,9 +4,11 @@ import './title.css'
 const Title = () => {
   return (
     <>
-      <div className="title" data-aos="fade-up">
+      <div className="title" data-aos="zoom-in" id='Home'>
         <p>Hey there, I am </p>
-        <h1>Harsh Shinde</h1>
+        <h1>
+          Harsh Shinde
+        </h1>
       </div>
     </>
   );

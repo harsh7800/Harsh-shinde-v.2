@@ -57,7 +57,7 @@
   font-size: .9em;
 }
 
-.contact-container form .submitBtn {
+.contact-container form #submitBtn {
   border: none;
   background-color: #00fc2a;
   width: 8em;
@@ -72,7 +72,7 @@
   transition: background-color 0.3s ease-in;
 }
 
-.contact-container form .submitBtn:hover {
+.contact-container form #submitBtn:hover {
   background-color: lightgreen;
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
@@ -132,7 +132,7 @@
   .contact-container form #message-input:placeholder-shown {
     font-size: .9em;
   }
-  .contact-container form .submitBtn {
+  .contact-container form #submitBtn {
     border: none;
     background-color: #00fc2a;
     width: 6em;
@@ -145,7 +145,7 @@
     -webkit-transition: background-color 0.3s ease-in;
     transition: background-color 0.3s ease-in;
   }
-  .contact-container form .submitBtn:hover {
+  .contact-container form #submitBtn:hover {
     background-color: lightgreen;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;

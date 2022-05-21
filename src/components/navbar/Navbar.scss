@@ -19,6 +19,27 @@
                         &:hover{
                               color: rgb(29, 162, 219);
                               transition: color .2s ease-in-out;
+                              cursor: pointer;
+                        }
+                  }
+            }
+}
+
+.navbar-container.bg{
+      display: flex;
+      list-style: none;
+      margin-right: 5vw;
+            li{
+                  list-style: none;
+                  margin-right: 3vw;
+                  a{
+                        text-decoration: none;
+                        color: rgb(0, 0, 0);
+                        font-family: 'Ubuntu', sans-serif;
+                        font-size: 1.1rem;
+                        &:hover{
+                              color: rgb(29, 162, 219);
+                              transition: color .2s ease-in-out;
                         }
                   }
             }
@@ -26,6 +47,12 @@
 
 @media (max-width: 600px) {
       .navbar-container{
+            display: none;
+            background-color: skyblue;
+            z-index: 9999;
+            height: 20em;
+      }
+      .navbar-container.bg{
             display: none;
       }
 }
