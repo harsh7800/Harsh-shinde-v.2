@@ -5,8 +5,13 @@ import { Link } from 'react-scroll';
 const ScrollDown = () => {
   return (
     <>
-      <div className="scroll-wrapper" data-aos="zoom-in">
-        <Link to='About-me' smooth={true} duration={400} className="scroll-container">
+      <div className="scroll-wrapper" data-aos="zoom-in" data-aos-delay="500">
+        <Link
+          to="About-me"
+          smooth={true}
+          duration={400}
+          className="scroll-container"
+        >
           <div className="scroll-down"></div>
         </Link>
       </div>

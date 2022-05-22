@@ -27,8 +27,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: unset;
-      flex-shrink: unset;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -37,16 +35,7 @@ body {
           align-items: center;
   width: 100vw;
   height: 5em;
-  position: fixed;
   top: 0em;
-  z-index: 9999;
-}
-
-.nav-wrapper.bg {
-  background-color: rgba(255, 255, 255, 0.466);
-  color: black;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .about-me .info-skills {
@@ -82,12 +71,6 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 1140px) {
-  .nav-wrapper.bg {
-    background-color: white;
-    color: black;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
   main section {
     width: 100vw;
     display: -webkit-box;
@@ -135,6 +118,15 @@ body {
 }
 
 @media (max-width: 600px) {
+  .nav-wrapper {
+    position: fixed;
+    z-index: 1000;
+  }
+  .nav-wrapper.bg {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: white;
+  }
   .home-wrapper {
     width: 100vw;
     height: 100%;
@@ -142,12 +134,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-  .home-wrapper .nav-wrapper.bg {
-    background-color: white;
-    color: black;
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   main section {
     width: 100vw;

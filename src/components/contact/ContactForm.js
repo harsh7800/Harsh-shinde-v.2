@@ -17,7 +17,7 @@ const ContactForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          console.log("message sent");
+          alert("Messaage Sent Successfully")
         },
         (error) => {
           console.log(error.text);

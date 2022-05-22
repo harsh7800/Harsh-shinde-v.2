@@ -1,157 +1,146 @@
-html{
-      scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-*{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}
-
-body{
-      width: 100%;
-      height: 100%;
-}
-.home-wrapper{
-      width: 100%;
-      height: 100%;
-      background: url(./website-background.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-wrapper{
-      display: flex;
-      flex-shrink: unset;
-      justify-content: space-between;
-      align-items: center;
-      width: 100vw;
-      height: 5em;
-      position: fixed;
-      top: 0em;
-      z-index: 9999;
+body {
+  width: 100%;
+  height: 100%;
+}
+.home-wrapper {
+  width: 100%;
+  height: 100%;
+  background: url(./website-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.nav-wrapper.bg{
-      background-color: rgba(255, 255, 255, 0.466);
-      color: black;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 5em;
+  top: 0em;
 }
 
-
-.about-me{
-      .info-skills{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 3em;
-      }
+.about-me {
+  .info-skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+  }
 }
 
-.projects-wrapper{
-      margin-top: 10em;
+.projects-wrapper {
+  margin-top: 10em;
 }
 
-.footer-wrapper{
-      background-color: black;
-      width: 100vw;
-      height: 15em;
-      margin-top: 10em;
-      .footer{
-            margin-top: 2em;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 2px solid grey;
-      }
+.footer-wrapper {
+  background-color: black;
+  width: 100vw;
+  height: 15em;
+  margin-top: 10em;
+  .footer {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid grey;
+  }
 }
-
 
 @media (min-width: 600px) and (max-width: 1140px) {
-      .nav-wrapper.bg{
-      background-color: rgb(255, 255, 255);
-      color: black;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-      main{
-            section{
-                  width: 100vw;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-            }
-      }
+  main {
+    section {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 
-      .about-me{
-      .info-skills{
+  .about-me {
+    .info-skills {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       margin-top: -3em;
-}
-}
+    }
+  }
 
-.projects-wrapper{
-      margin-top: 5em;
-}
+  .projects-wrapper {
+    margin-top: 5em;
+  }
 
-.footer-wrapper{
-      margin-top: 10em;
-      width: 100vw;
-      height: 15em;
-      .footer{
-            display: flex;
-            justify-content: space-between;
-            background-color: black;
-            margin-top: 2em;
-      }
-}
+  .footer-wrapper {
+    margin-top: 10em;
+    width: 100vw;
+    height: 15em;
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      background-color: black;
+      margin-top: 2em;
+    }
+  }
 }
 
 @media (max-width: 600px) {
-      .home-wrapper{
-      width: 100vw;
-      height: 100%;
-      background: url(./mobile-bg.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      .nav-wrapper.bg{
-      background-color: rgb(255, 255, 255);
-      color: black;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+  .nav-wrapper {
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .nav-wrapper.bg{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        background-color: white;
+  }
+  .home-wrapper {
+    width: 100vw;
+    height: 100%;
+    background: url(./mobile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+main {
+  section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-       main{
-            section{
-                  width: 100vw;
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-            }
-      }
-
-      .about-me{
-      .info-skills{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin-top: -3em;
-}
+.about-me {
+  .info-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -3em;
+  }
 }
 
-.projects-wrapper{
-      margin-top: 5em;
+.projects-wrapper {
+  margin-top: 5em;
 }
 
-.footer-wrapper{
-      margin-top: 10em;
-      width: 100vw;
-      height: 27em;
-      .footer{
-            display: flex;
-            flex-direction: column;
-            background-color: black;
-            margin-left: 1em;
-      }
+.footer-wrapper {
+  margin-top: 10em;
+  width: 100vw;
+  height: 27em;
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin-left: 1em;
+  }
 }
 }

@@ -10,7 +10,10 @@
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin-right: 5vw;
+  position: absolute;
+  right: 1em;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .navbar-container li {
@@ -18,55 +21,81 @@
   margin-right: 3vw;
 }
 
-.navbar-container li a {
+.navbar-container li .navlinks {
   text-decoration: none;
   color: white;
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.1rem;
 }
 
-.navbar-container li a:hover {
+.navbar-container li .navlinks:hover {
   color: #1da2db;
   -webkit-transition: color .2s ease-in-out;
   transition: color .2s ease-in-out;
   cursor: pointer;
 }
 
-.navbar-container.bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  margin-right: 5vw;
-}
-
-.navbar-container.bg li {
-  list-style: none;
-  margin-right: 3vw;
-}
-
-.navbar-container.bg li a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1.1rem;
-}
-
-.navbar-container.bg li a:hover {
-  color: #1da2db;
-  -webkit-transition: color .2s ease-in-out;
-  transition: color .2s ease-in-out;
+.menu {
+  display: none;
 }
 
 @media (max-width: 600px) {
   .navbar-container {
-    display: none;
-    background-color: skyblue;
-    z-index: 9999;
-    height: 20em;
+    display: block;
+    z-index: 1000;
+    height: 40em;
+    width: 70vw;
+    left: 35em;
+    -webkit-transition: left ease-in .5s;
+    transition: left ease-in .5s;
+    position: fixed;
+    color: black;
+    background-color: white;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
-  .navbar-container.bg {
-    display: none;
+  .navbar-container li {
+    margin-bottom: 5em;
+  }
+  .navbar-container li .navlinks {
+    color: black;
+    position: relative;
+    top: 6em;
+    left: 1em;
+    text-align: left;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5em;
+  }
+  .navbar-container li .navlinks:hover {
+    color: #3b9fbd;
+  }
+  .navbar-container.active {
+    display: block;
+    z-index: 1000;
+    height: 40em;
+    width: 70vw;
+    left: 10em;
+    -webkit-transition: left ease-in .5s;
+    transition: left ease-in .5s;
+    position: absolute;
+    color: black;
+    background-color: white;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .menu {
+    display: block;
+    position: fixed;
+    top: .8em;
+    right: 1em;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #4f9fcd;
+    font-size: 1.7rem;
+    z-index: 9999;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

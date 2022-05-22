@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import './App.css'
 import './components/navbar/Navbar.css'
-import NavBar from "./components/navbar/NavBar";
+import NavLinks from "./components/navbar/NavLinks";
 import Logo from "./components/navbar/Logo";
-import MenuButton from "./components/navbar/MenuButton";
 import Description from "./components/header/Description";
 import Title from "./components/header/Title";
 import ScrollDown from "./components/header/ScrollDown";
@@ -18,36 +17,29 @@ import ContactForm from "./components/contact/ContactForm";
 import Name from "./components/footer/Name";
 import SocHandle from "./components/footer/SocHandle";
 import Copyright from "./components/footer/Copyright";
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+// import { Navbar , Nav} from "react-bootstrap";
 // import React from 'react'
 
 const App = () => {
   const [scroll, setScroll] = useState(false);
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     if (window.scrollY >= 700) {
-      setScroll(true)
+      setScroll(true);
     } else {
-      setScroll(false)
+      setScroll(false);
     }
   });
-
   return (
     <>
       <Router>
         <div className="home-wrapper">
           {" "}
           {/*----- Home section-------*/}
-          <nav className={scroll? 'nav-wrapper bg' : 'nav-wrapper'}>
+          <nav className={scroll ? "nav-wrapper bg" : "nav-wrapper"}>
             <Logo />
-            <NavBar />
-            {/* <Routes>
-              <Route exact path="/" element={<Title />}></Route>
-              <Route exact path="/about" element={<AboutTitle />}></Route>
-              <Route exact path="/projects" element={<ProjectTitle />}></Route>
-              <Route exact path="/contact" element={<ContactTitle />}></Route>
-            </Routes> */}
-            <MenuButton />
+            <NavLinks />
           </nav>
           <main>
             <section className="home">

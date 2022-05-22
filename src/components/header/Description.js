@@ -5,9 +5,9 @@ import { Link } from 'react-scroll';
 const Description = () => {
   return (
     <>
-      <div className="description" data-aos="zoom-in-up">
-        <Link to='Projects' smooth={true} duration={900}>
-        <button id="projectsBtn">Projects</button>
+      <div className="description" data-aos="zoom-in-up" data-aos-delay="500">
+        <Link to="Projects" smooth={true} duration={900}>
+          <button id="projectsBtn">Projects</button>
         </Link>
       </div>
     </>

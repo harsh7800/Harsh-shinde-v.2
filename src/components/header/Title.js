@@ -4,7 +4,7 @@ import './title.css'
 const Title = () => {
   return (
     <>
-      <div className="title" data-aos="zoom-in" id='Home'>
+      <div className="title" data-aos="zoom-in" data-aos-delay="500" id='Home'>
         <p>Hey there, I am </p>
         <h1>
           Harsh Shinde

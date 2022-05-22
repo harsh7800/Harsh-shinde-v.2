@@ -7,13 +7,15 @@
 .navbar-container{
       display: flex;
       list-style: none;
-      margin-right: 5vw;
+      position: absolute;
+      right: 1em;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             li{
                   list-style: none;
                   margin-right: 3vw;
-                  a{
+                  .navlinks{
                         text-decoration: none;
-                        color: white;
+                        color: rgb(255, 255, 255);
                         font-family: 'Ubuntu', sans-serif;
                         font-size: 1.1rem;
                         &:hover{
@@ -23,36 +25,67 @@
                         }
                   }
             }
-}
-
-.navbar-container.bg{
-      display: flex;
-      list-style: none;
-      margin-right: 5vw;
-            li{
-                  list-style: none;
-                  margin-right: 3vw;
-                  a{
-                        text-decoration: none;
-                        color: rgb(0, 0, 0);
-                        font-family: 'Ubuntu', sans-serif;
-                        font-size: 1.1rem;
-                        &:hover{
-                              color: rgb(29, 162, 219);
-                              transition: color .2s ease-in-out;
-                        }
-                  }
-            }
+      }
+      .menu{
+                  display: none;
+                  
 }
 
 @media (max-width: 600px) {
       .navbar-container{
-            display: none;
-            background-color: skyblue;
-            z-index: 9999;
-            height: 20em;
+           display: block;
+           z-index: 1000;
+           height: 40em;
+           width: 70vw;
+           left: 35em;
+           transition: left ease-in .5s;
+           position: fixed;
+           color: black;
+           background-color: rgb(255, 255, 255);
+           top: 0;
+           border-bottom-left-radius: 10px;
+           border-top-left-radius: 10px;
+            li{
+                  margin-bottom: 5em;
+                  .navlinks{
+                  color: black;
+                  position: relative;
+                  top: 6em;
+                  left: 1em;
+                  text-align: left;
+                  font-family: "Bebas Neue", cursive;
+                  font-size: 1.5em;
+                  &:hover{
+                        color: rgb(59, 159, 189);
+                  }
+            }
+            }
       }
-      .navbar-container.bg{
-            display: none;
+
+      .navbar-container.active{
+           display: block;
+           z-index: 1000;
+           height: 40em;
+           width: 70vw;
+           left: 10em;
+           transition: left ease-in .5s;
+           position: absolute;
+           color: black;
+           background-color: rgb(255, 255, 255);
+           top: 0;
+           border-bottom-left-radius: 10px;
+           border-top-left-radius: 10px;
+      }
+      .menu {
+            display: block;
+            position: fixed;
+            top: .8em;
+            right: 1em;
+            cursor: pointer;
+            border: none;
+            background: none;
+            color: rgb(79, 159, 205);
+            font-size: 1.7rem;
+            z-index: 9999;
       }
 }
