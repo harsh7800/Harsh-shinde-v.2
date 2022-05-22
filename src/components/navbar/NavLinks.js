@@ -67,9 +67,6 @@ const NavBar = () => {
             <button
               className="menu"
               onClick={() => setShowMenu(!showMenu)}
-              data-aos="fade-left"
-              data-aos-duration="400"
-              data-aos-delay="500"
             >
               {showMenu ? (
                 <i className="fa-solid fa-times"></i>
