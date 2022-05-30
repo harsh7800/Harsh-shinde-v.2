@@ -1,114 +1,164 @@
-.projects {
-  width: 100vw;
-  margin-top: 10em;
-}
-
-.projects .project-1 {
+.projects-container {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  font-family: 'Concert One', cursive;
+  top: 5em;
 }
 
-.projects .project-1 h3 {
-  margin-top: 1em;
-  font-size: 2em;
-  font-family: "Bebas Neue", cursive;
+.projects-container #title {
+  position: absolute;
+  top: 2em;
+  color: white;
+  opacity: 0;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
-.projects .project-1 p {
-  margin-top: 2em;
-  width: 38vw;
-  color: black;
-  font-family: 'Josefin Sans', sans-serif;
-  margin-right: 2em;
-  text-align: left;
+.projects-container #caseStudy {
+  width: 9em;
+  height: 2.5em;
+  border-radius: 20px;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  top: 10em;
+  background-color: #44b6cd;
+  opacity: 0;
+  -webkit-transition: opacity ease-in 0.2s;
+  transition: opacity ease-in 0.2s;
 }
 
-.projects .project-1 img {
-  min-width: 45em;
-  width: 60em;
+.projects-container #caseStudy:hover {
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+          box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+  -webkit-transition: -webkit-box-shadow .4s ease-in;
+  transition: -webkit-box-shadow .4s ease-in;
+  transition: box-shadow .4s ease-in;
+  transition: box-shadow .4s ease-in, -webkit-box-shadow .4s ease-in;
 }
 
-.projects .project-2 {
-  width: 100vw;
+.projects-container .project-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 30vw;
+  min-width: 20em;
+  height: 20em;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: url(./SpaceTourist.png);
+  background-size: cover;
 }
 
-.projects .project-2 h3 {
-  margin-left: 1em;
-  text-align: left;
-  margin-top: 1em;
-  font-size: 2em;
-  font-family: "Bebas Neue", cursive;
+.projects-container .project-1:hover {
+  -webkit-box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+          box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
 }
 
-.projects .project-2 p {
-  margin-top: 2em;
-  text-align: left;
-  width: 40vw;
-  font-family: 'Josefin Sans', sans-serif;
-  margin-left: 2em;
-  margin-right: -3em;
-  color: black;
-  text-align: left;
+.projects-container .project-1:hover #title, .projects-container .project-1:hover #caseStudy {
+  opacity: 1;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
-.projects .project-2 img {
-  min-width: 45em;
-  width: 60em;
-}
-
-.projects .project-3 {
-  width: 100vw;
+.projects-container .project-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 30vw;
+  min-width: 20em;
+  height: 20em;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: url(./Loopstudio.jpg);
+  background-size: cover;
 }
 
-.projects .project-3 h3 {
-  margin-top: 1em;
-  font-size: 2em;
-  font-family: "Bebas Neue", cursive;
-  margin-left: -1em;
+.projects-container .project-2:hover {
+  -webkit-box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+          box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
 }
 
-.projects .project-3 p {
-  margin-top: 2em;
-  margin-left: -2em;
-  width: 38vw;
-  color: black;
-  text-align: left;
-  font-family: 'Josefin Sans', sans-serif;
-  margin-right: 2em;
+.projects-container .project-2:hover #title, .projects-container .project-2:hover #caseStudy {
+  opacity: 1;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
-.projects .project-3 img {
-  min-width: 45em;
-  width: 60em;
+.projects-container .project-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 30vw;
+  min-width: 20em;
+  height: 20em;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: url(./Snap.jpg);
+  background-size: cover;
+}
+
+.projects-container .project-3:hover {
+  -webkit-box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+          box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
+}
+
+.projects-container .project-3:hover #title, .projects-container .project-3:hover #caseStudy {
+  opacity: 1;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
 @media (min-width: 600px) and (max-width: 1140px) {
-  .projects {
-    width: 100vw;
-    margin-top: 10em;
-  }
-  .projects .project-1 {
+  .projects-container {
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -117,111 +167,74 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .projects .project-1 h3 {
-    margin-top: -1em;
-    font-size: 2em;
-    font-family: "Bebas Neue", cursive;
-    text-align: center;
-  }
-  .projects .project-1 p {
-    border-bottom: 2px ridge black;
-    margin-top: 2em;
-    width: 85vw;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-right: 2em;
-  }
-  .projects .project-1 img {
-    min-width: 20em;
-    width: 40em;
-  }
-  .projects .project-2 {
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 5em;
-  }
-  .projects .project-2 h3 {
-    margin-top: -1em;
-    font-size: 2em;
-    font-family: "Bebas Neue", cursive;
-    text-align: center;
-  }
-  .projects .project-2 p {
-    border-bottom: 2px ridge black;
-    margin-top: 2em;
-    width: 85vw;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-right: 2em;
-  }
-  .projects .project-2 img {
-    min-width: 20em;
-    width: 40em;
-  }
-  .projects .project-3 {
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 5em;
-  }
-  .projects .project-3 h3 {
-    margin-top: -1em;
-    font-size: 2em;
-    font-family: "Bebas Neue", cursive;
-    text-align: center;
-  }
-  .projects .project-3 p {
-    border-bottom: 2px ridge black;
-    margin-top: 2em;
-    width: 85vw;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-right: 2em;
+  .projects-container #title {
+    position: absolute;
+    top: 16em;
+    z-index: 100;
     color: black;
-    text-align: left;
+    opacity: 1;
   }
-  .projects .project-3 img {
-    min-width: 20em;
-    width: 40em;
+  .projects-container #caseStudy {
+    opacity: 1;
+    width: 9em;
+    height: 2.5em;
+    border-radius: 20px;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    top: 30em;
+    z-index: 100;
+    background-color: #44b6cd;
+  }
+  .projects-container #caseStudy:hover {
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+            box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+    -webkit-transition: -webkit-box-shadow .2s ease-in;
+    transition: -webkit-box-shadow .2s ease-in;
+    transition: box-shadow .2s ease-in;
+    transition: box-shadow .2s ease-in, -webkit-box-shadow .2s ease-in;
+  }
+  .projects-container .project-1 {
+    width: 80vw;
+    height: 30em;
+    background: url(./SpaceTourist.png);
+    background-size: cover;
+    background-position: left;
+  }
+  .projects-container .project-1:hover {
+    -webkit-box-shadow: 0 0 0 0 inset;
+            box-shadow: 0 0 0 0 inset;
+  }
+  .projects-container .project-2 {
+    margin-top: 20em;
+    width: 80vw;
+    height: 30em;
+    background: url(./Loopstudio.jpg);
+    background-size: cover;
+    background-position: left;
+  }
+  .projects-container .project-2:hover {
+    -webkit-box-shadow: 0 0 0 0 inset;
+            box-shadow: 0 0 0 0 inset;
+  }
+  .projects-container .project-3 {
+    margin-top: 20em;
+    width: 80vw;
+    height: 30em;
+    background: url(./Snap.jpg);
+    background-size: cover;
+    background-position: left;
+  }
+  .projects-container .project-3:hover {
+    -webkit-box-shadow: 0 0 0 0 inset;
+            box-shadow: 0 0 0 0 inset;
   }
 }
 
 @media (max-width: 600px) {
-  .projects {
-    width: 100vw;
-    margin-top: 5em;
-  }
-  .projects .project-1 {
+  .projects-container {
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -230,109 +243,69 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .projects .project-1 h3 {
-    margin-top: -1em;
-    font-size: 2em;
-    font-family: "Bebas Neue", cursive;
-    text-align: center;
-  }
-  .projects .project-1 p {
-    border-bottom: 2px ridge black;
-    margin-top: 2em;
-    width: 85vw;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-right: 2em;
+  .projects-container #title {
+    position: absolute;
+    top: 8em;
+    z-index: 100;
     color: black;
-    text-align: left;
-    margin-left: .5em;
+    opacity: 1;
   }
-  .projects .project-1 img {
-    min-width: 10em;
-    width: 25em;
+  .projects-container #caseStudy {
+    opacity: 1;
+    width: 9em;
+    height: 2.5em;
+    border-radius: 20px;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    top: 17em;
+    z-index: 100;
+    background-color: #44b6cd;
   }
-  .projects .project-2 {
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 5em;
+  .projects-container #caseStudy:hover {
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+            box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+    -webkit-transition: -webkit-box-shadow .2s ease-in;
+    transition: -webkit-box-shadow .2s ease-in;
+    transition: box-shadow .2s ease-in;
+    transition: box-shadow .2s ease-in, -webkit-box-shadow .2s ease-in;
   }
-  .projects .project-2 h3 {
-    margin-top: -1em;
-    font-size: 2em;
-    font-family: "Bebas Neue", cursive;
-    text-align: center;
-    margin-left: -1em;
+  .projects-container .project-1 {
+    width: 80vw;
+    height: 15em;
+    background: url(./SpaceTourist.png);
+    background-size: cover;
+    background-position: center;
   }
-  .projects .project-2 p {
-    border-bottom: 2px ridge black;
-    margin-top: 2em;
-    width: 85vw;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-right: 2em;
-    color: black;
-    text-align: left;
+  .projects-container .project-1:hover {
+    -webkit-box-shadow: 0 0 0 0 inset;
+            box-shadow: 0 0 0 0 inset;
   }
-  .projects .project-2 img {
-    min-width: 10em;
-    width: 25em;
+  .projects-container .project-2 {
+    margin-top: 15em;
+    width: 80vw;
+    height: 15em;
+    background: url(./Loopstudio.jpg);
+    background-size: cover;
+    background-position: left;
   }
-  .projects .project-3 {
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 5em;
+  .projects-container .project-2:hover {
+    -webkit-box-shadow: 0 0 0 0 inset;
+            box-shadow: 0 0 0 0 inset;
   }
-  .projects .project-3 h3 {
-    margin-top: -1em;
-    font-size: 2em;
-    font-family: "Bebas Neue", cursive;
-    text-align: center;
+  .projects-container .project-3 {
+    margin-top: 15em;
+    width: 80vw;
+    height: 15em;
+    background: url(./Snap.jpg);
+    background-size: cover;
+    background-position: left;
   }
-  .projects .project-3 p {
-    border-bottom: 2px ridge black;
-    margin-top: 2em;
-    width: 85vw;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    margin-right: 2em;
-    color: black;
-    text-align: left;
-    margin-left: 1em;
-  }
-  .projects .project-3 img {
-    min-width: 10em;
-    width: 25em;
+  .projects-container .project-3:hover {
+    -webkit-box-shadow: 0 0 0 0 inset;
+            box-shadow: 0 0 0 0 inset;
   }
 }
 /*# sourceMappingURL=Projects.css.map */

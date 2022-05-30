@@ -27,21 +27,26 @@ const ContactForm = () => {
   };
   return (
     <>
-      <div className="contact-container" data-aos="zoom-in">
+      <div
+        className="contact-container"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+        data-aos-duration="500"
+      >
         <form ref={form} onSubmit={sendEmail}>
           <h3>Fill the Following</h3>
           <input
             id="name-input"
             type="text"
             placeholder="Enter your name"
-            name='user_name'
+            name="user_name"
             required
           />
           <input
             id="email-input"
             type="text"
             placeholder="Enter your email"
-            name='user_email'
+            name="user_email"
             required
           />
           <textarea
@@ -50,7 +55,7 @@ const ContactForm = () => {
             placeholder="Enter a short message"
             required
           ></textarea>
-          <input type="submit" value="Send" id='submitBtn' />
+          <input type="submit" value="Send" id="submitBtn" />
         </form>
       </div>
     </>

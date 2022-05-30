@@ -18,6 +18,7 @@ import Name from "./components/footer/Name";
 import SocHandle from "./components/footer/SocHandle";
 import Copyright from "./components/footer/Copyright";
 import { BrowserRouter as Router } from "react-router-dom";
+import BackgroundVideo from '../src/Code-1.mp4'
 // import { Navbar , Nav} from "react-bootstrap";
 // import React from 'react'
 
@@ -35,21 +36,22 @@ const App = () => {
     <>
       <Router>
         <div className="home-wrapper">
+          <video autoPlay loop muted>
+            <source src={BackgroundVideo} type="video/mp4"/>
+          </video>
           {" "}
           {/*----- Home section-------*/}
           <nav className={scroll ? "nav-wrapper bg" : "nav-wrapper"}>
             <Logo />
             <NavLinks />
           </nav>
-          <main>
-            <section className="home">
-              <Title />
+          <main className="header">
+              <Title/>
               <Description />
-            </section>
-            <ScrollDown />
+              <ScrollDown />
           </main>
         </div>
-        <section className="about-me">
+        <section className="about-me-container">
           {" "}
           {/*----- About me  section-------*/}
           <AboutTitle />
@@ -83,7 +85,7 @@ const App = () => {
         </footer>
       </Router>
     </>
-  );
+  )
 }
 
 export default App

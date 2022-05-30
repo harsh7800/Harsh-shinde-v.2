@@ -5,7 +5,7 @@ const Copyright = () => {
       return (
             <>
             
-            <p>&#169; Copyright 2022. Made by Harsh Shinde </p>;
+            <p>&#169; Copyright 2022. Made by Harsh Shinde </p>
             </>
             )
 }

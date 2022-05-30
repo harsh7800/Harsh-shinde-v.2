@@ -1,264 +1,235 @@
-.projects{
+.projects-container{
       width: 100vw;
-      margin-top: 10em;
+      display: flex; 
+      justify-content: space-evenly;
+      align-items: center;
+      position: relative;
+      font-family: 'Concert One', cursive;
+      top: 5em;
+       #title{
+                  position: absolute;
+                  top: 2em;
+                  color: white;
+                  opacity: 0;
+                  transition: all ease-in 0.3s;
+            }
+            #caseStudy{
+                  width: 9em;
+                  height: 2.5em;
+                  border-radius: 20px;
+                  font-size: 20px;
+                  border: none;
+                  position: absolute;
+                  top: 10em;
+                  background-color: rgb(68, 182, 205);
+                  opacity: 0;
+                  transition: opacity ease-in 0.2s;
+                  &:hover{
+                         box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+                         transition: box-shadow .4s ease-in;
+                  }
+            }
       .project-1{
-            width: 100vw;
             display: flex;
-            justify-content: space-between;
-            h3{
-                  margin-top: 1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-            }
-            p{
-                  margin-top: 2em;
-                  width: 38vw;
-                  color: black;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-right: 2em;
-                  text-align: left;
-            }
-            img{
-                  min-width: 45em;
-                  width: 60em;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 30vw;
+            min-width: 20em;
+            height: 20em;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background: url(./SpaceTourist.png);
+            background-size: cover;
+            
+             &:hover{
+                   box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+                   transition: all ease-in 0.4s;
+                        
+                   #title,#caseStudy{
+                         opacity: 1;
+                         transition: all ease-in 0.3s;
+                  }
             }
       }
+      
       .project-2{
-            width: 100vw;
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-             h3{
-                   margin-left: 1em;
-                   text-align: left;
-                  margin-top: 1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-            }
-            p{
-                  margin-top: 2em;
-                  text-align: left;
-                  width: 40vw;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-left: 2em;
-                  margin-right: -3em;
-                  color: black;
-                  text-align: left;
-            }
-            img{
-                  min-width: 45em;
-                  width: 60em;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 30vw;
+            min-width: 20em;
+            height: 20em;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background: url(./Loopstudio.jpg);
+            background-size: cover;
+            
+             &:hover{
+                   box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+                   transition: all ease-in 0.4s;
+                        
+                   #title,#caseStudy{
+                         opacity: 1;
+                         transition: all ease-in 0.3s;
+                  }
             }
       }
       .project-3{
-            width: 100vw;
             display: flex;
-            justify-content: space-between;
-            h3{
-                  margin-top: 1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-                  margin-left: -1em;
-            }
-            p{
-                  margin-top: 2em;
-                  margin-left: -2em;
-                  width: 38vw;
-                  color: black;
-                  text-align: left;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-right: 2em;
-            }
-            img{
-                  min-width: 45em;
-                  width: 60em;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 30vw;
+            min-width: 20em;
+            height: 20em;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background: url(./Snap.jpg);
+            background-size: cover;
+            
+             &:hover{
+                   box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+                   transition: all ease-in 0.4s;
+                        
+                   #title,#caseStudy{
+                         opacity: 1;
+                         transition: all ease-in 0.3s;
+                  }
             }
       }
 }
 
 
 @media (min-width: 600px) and (max-width: 1140px) {
-      .projects{
+     .projects-container{
       width: 100vw;
-      margin-top: 10em;
-      .project-1{
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-                  margin-top: -1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-                  text-align: center;
-            }
-            p{
-                  border-bottom: 2px ridge black;
-                  margin-top: 2em;
-                  width: 85vw;
-                  text-align: center;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-right: 2em;
-            }
-            img{
-                  min-width: 20em;
-                  width: 40em;
-            }
-      }
-     .project-2{
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5em;
-            h3{
-                  margin-top: -1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-                  text-align: center;
-            }
-            p{
-                  border-bottom: 2px ridge black;
-                  margin-top: 2em;
-                  width: 85vw;
-                  text-align: center;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-right: 2em;
-            }
-            img{
-                  min-width: 20em;
-                  width: 40em;
-            }
-
-      }
-
-
-      .project-3{
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5em;
-            h3{
-                  margin-top: -1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-                  text-align: center;
-            }
-            p{
-                  border-bottom: 2px ridge black;
-                  margin-top: 2em;
-                  width: 85vw;
-                  text-align: center;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-right: 2em;
+      display: flex; 
+      flex-direction: column;
+       #title{
+                  position: absolute;
+                  top: 16em;
+                  z-index: 100;
                   color: black;
-                  text-align: left;
+                  opacity: 1;
             }
-            img{
-                  min-width: 20em;
-                  width: 40em;
+            #caseStudy{
+                  opacity: 1;
+                  width: 9em;
+                  height: 2.5em;
+                  border-radius: 20px;
+                  font-family: 'Concert One', cursive;
+                  font-size: 20px;
+                  border: none;
+                  position: absolute;
+                  top: 30em;
+                  z-index: 100;
+                  background-color: rgb(68, 182, 205);
+                  &:hover{
+                         box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+                         transition: box-shadow .2s ease-in;
+                  }
             }
-        }
+      .project-1{
+            width: 80vw;
+            height: 30em;
+            background: url(./SpaceTourist.png);
+            background-size: cover;
+            background-position: left;
+            &:hover{
+                  box-shadow: 0 0 0 0 inset;
+            }
       }
+      .project-2{
+            margin-top: 20em;
+            width: 80vw;
+            height: 30em;
+            background: url(./Loopstudio.jpg);
+            background-size: cover;
+            background-position: left;
+            &:hover{
+                  box-shadow: 0 0 0 0 inset;
+            }
+      }
+      .project-3{
+            margin-top: 20em;
+            width: 80vw;
+            height: 30em;
+            background: url(./Snap.jpg);
+            background-size: cover;
+            background-position: left;
+            &:hover{
+                  box-shadow: 0 0 0 0 inset;
+            }
+      }
+}
 }
 
 
 @media (max-width: 600px) {
-       .projects{
+       .projects-container{
       width: 100vw;
-      margin-top: 5em;
+      display: flex; 
+      flex-direction: column;
+       #title{
+                  position: absolute;
+                  top: 8em;
+                  z-index: 100;
+                  color: black;
+                  opacity: 1;
+            }
+            #caseStudy{
+                  opacity: 1;
+                  width: 9em;
+                  height: 2.5em;
+                  border-radius: 20px;
+                  font-family: 'Concert One', cursive;
+                  font-size: 20px;
+                  border: none;
+                  position: absolute;
+                  top: 17em;
+                  z-index: 100;
+                  background-color: rgb(68, 182, 205);
+                  &:hover{
+                         box-shadow: 0px 0px 15px 3px rgba(65, 182, 224, 0.9);
+                         transition: box-shadow .2s ease-in;
+                  }
+            }
       .project-1{
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-                  margin-top: -1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-                  text-align: center;
-            }
-            p{
-                  border-bottom: 2px ridge black;
-                  margin-top: 2em;
-                  width: 85vw;
-                  text-align: center;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-right: 2em;
-                  color: black;
-                  text-align: left;
-                  margin-left: .5em;
-            }
-            img{
-                  min-width: 10em;
-                  width: 25em;
+            width: 80vw;
+            height: 15em;
+            background: url(./SpaceTourist.png);
+            background-size: cover;
+            background-position: center;
+            &:hover{
+                  box-shadow: 0 0 0 0 inset;
             }
       }
-     .project-2{
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5em;
-            h3{
-                  margin-top: -1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-                  text-align: center;
-                  margin-left: -1em;
+      .project-2{
+            margin-top: 15em;
+            width: 80vw;
+            height: 15em;
+            background: url(./Loopstudio.jpg);
+            background-size: cover;
+            background-position: left;
+            &:hover{
+                  box-shadow: 0 0 0 0 inset;
             }
-            p{
-                  border-bottom: 2px ridge black;
-                  margin-top: 2em;
-                  width: 85vw;
-                  text-align: center;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-right: 2em;
-                  color: black;
-                  text-align: left;
-            }
-            img{
-                  min-width: 10em;
-                  width: 25em;
-            }
-
       }
-
-
       .project-3{
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5em;
-            h3{
-                  margin-top: -1em;
-                  font-size: 2em;
-                  font-family: "Bebas Neue", cursive;
-                  text-align: center;
+            margin-top: 15em;
+            width: 80vw;
+            height: 15em;
+            background: url(./Snap.jpg);
+            background-size: cover;
+            background-position: left;
+            &:hover{
+                  box-shadow: 0 0 0 0 inset;
             }
-            p{
-                  border-bottom: 2px ridge black;
-                  margin-top: 2em;
-                  width: 85vw;
-                  text-align: center;
-                  font-family: 'Josefin Sans', sans-serif;
-                  margin-right: 2em;
-                  color: black;
-                  text-align: left;
-                  margin-left: 1em;
-            }
-            img{
-                  min-width: 10em;
-                  width: 25em;
-            }
-        }
       }
+}
 }

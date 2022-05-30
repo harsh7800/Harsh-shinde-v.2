@@ -1,24 +1,23 @@
 .scroll-wrapper{
       width: 100vw;
-      height: 7em;
       display: flex;
       justify-content: center;
+      margin-top: 6em;
 .scroll-container{
       cursor: pointer;
       width: 20px;
       height: 40px;
       border-radius: 20px;
-      border: 2px solid white;
+      border: 2px solid rgb(255, 255, 255);
+      transition: border .3s ease-in;
       display: flex;
       justify-content: center;
-      transition: border .3s ease-in;
-      margin-top: 2em;
       &:hover{
             border: 2px solid rgb(211, 37, 176);
             transition: border .3s ease-in;
       }
       .scroll-down{
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             border-radius: 50%;
             width: 7px;
             height: 7px;

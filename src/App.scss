@@ -3,7 +3,7 @@ html {
   width: 100vw;
 }
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -11,17 +11,20 @@ html {
 body {
   width: 100%;
   height: 100%;
-  margin: 0;
+  margin: 200px;
   padding: 0;
   box-sizing: border-box;
 }
 .home-wrapper {
   width: 100%;
   height: 100%;
-  background: url(./website-background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  video{
+    width: 100%;
+    height: 50em;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+  }
 }
 
 .nav-wrapper {
@@ -32,23 +35,42 @@ body {
   height: 5em;
   top: 0em;
 }
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3em;
+}
 
-.about-me {
+.about-me-container {
+  width: 90vw;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid rgba(128, 128, 128, 0.257);
+  position: relative;
+  top: 20em;
+  left: 5%;
   .info-skills {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 3em;
   }
 }
 
 .projects-wrapper {
-  margin-top: 10em;
+  margin-top: 25em;
+}
+
+.contact-wrapper{
+  margin-top: 15em;
 }
 
 .footer-wrapper {
   background-color: black;
   width: 100vw;
-  height: 15em;
+  height: 17em;
   margin-top: 10em;
   .footer {
     margin-top: 2em;
@@ -65,26 +87,32 @@ body {
             box-sizing: border-box;
             overflow-x: hidden;
       }
-  main {
-    section {
-      width: 100vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  .header {
+    margin-top: 3em;
+    
+  }
+  .about-me-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .about-me {
     .info-skills {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       margin-top: -3em;
     }
   }
 
   .projects-wrapper {
-    margin-top: 5em;
+    margin-top: 25em;
+  }
+
+  .contact-wrapper{
+    border-top: 2px solid rgba(0, 0, 0, 0.211);
+    margin-top: 20em;
   }
 
   .footer-wrapper {
@@ -112,45 +140,55 @@ body {
   }
   .home-wrapper {
     width: 100vw;
-    height: 100%;
-    background: url(./mobile-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 30em;
+     video{
+    width: 100%;
+    height: 45em;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+  }
   }
 
 
-main {
-  section {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.header {
+  margin-top: 0em;
 }
-
-.about-me {
-  .info-skills {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: -3em;
-  }
-}
-
-.projects-wrapper {
-  margin-top: 5em;
-}
-
-.footer-wrapper {
+section {
   margin-top: 10em;
   width: 100vw;
-  height: 27em;
-  .footer {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    margin-left: 1em;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+  .about-me {
+    .info-skills {
+      display: flex;
+      flex-direction: column;
+      margin-top: -3em;
+    }
+  }
+
+  .projects-wrapper {
+    margin-top: 25em;
+  }
+
+  .contact-wrapper{
+    border-top: 2px solid rgba(0, 0, 0, 0.211);
+    margin-top: 20em;
+  }
+
+  .footer-wrapper {
+    margin-top: 10em;
+    width: 100vw;
+    height: 15em;
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      margin-top: 2em;
+    }
+  }
 }

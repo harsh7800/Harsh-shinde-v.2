@@ -1,11 +1,12 @@
 .social-handle-container {
   height: 10em;
   margin-right: 5em;
+  margin-top: 2em;
 }
 
 .social-handle-container h2 {
   color: white;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Concert One", cursive;
   font-size: 2em;
 }
 
@@ -48,14 +49,17 @@
     width: 25vw;
     height: 10em;
     margin-right: 1em;
-    text-align: center;
+    text-align: left;
+    margin-top: 2em;
   }
   .social-handle-container h2 {
     color: white;
-    font-family: "Bebas Neue", cursive;
+    font-family: "Concert One", cursive;
     font-size: 1.5em;
   }
-  .social-handle-container #instagram, .social-handle-container #github, .social-handle-container #whatsapp {
+  .social-handle-container #instagram,
+  .social-handle-container #github,
+  .social-handle-container #whatsapp {
     font-size: 1em;
   }
 }
@@ -63,8 +67,14 @@
 @media (max-width: 600px) {
   .social-handle-container {
     width: 90vw;
+    margin-left: 20%;
     text-align: left;
-    margin-left: 1em;
+    margin-top: 2em;
+  }
+  .social-handle-container h2 {
+    color: white;
+    font-family: "Concert One", cursive;
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=socHandle.css.map */

@@ -1,48 +1,28 @@
 .project-title {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   margin-top: 3em;
-  h1 {
+  font-family: 'Concert One', cursive;
+
+  #proj{
     text-align: center;
-    font-size: 3rem;
-    color: black;
-    font-family: "Bebas Neue", cursive;
+    font-size: 36px;
   }
-  h1::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 5rem;
-    margin-top: 55px;
-    background: #facf0f;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px;
+  #ects{
+    text-align: center;
+    font-size: 36px;
+    color: #CE4A7EFF;
   }
 }
 
 @media (max-width: 600px) {
       .project-title{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   h1 {
     text-align: center;
     font-size: 2.5rem;
     color: black;
-    font-family: "Bebas Neue", cursive;
-  }
-  h1::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 5rem;
-    margin-top: 48px;
-    background: #facf0f;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 5px;
+    font-family: 'Concert One', cursive;;
   }
 }
 }

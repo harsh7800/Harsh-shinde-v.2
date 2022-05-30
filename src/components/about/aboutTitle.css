@@ -1,35 +1,28 @@
 .about-title {
+  width: 85vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  margin-top: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3em;
+  font-family: 'Concert One', cursive;
 }
 
 .about-title h1 {
-  text-align: center;
-  font-size: 3rem;
+  font-size: 36px;
   color: black;
-  font-family: "Bebas Neue", cursive;
 }
 
-.about-title h1::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 5rem;
-  margin-top: 55px;
-  background: #facf0f;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-radius: 5px;
+.about-title #about {
+  margin-left: 5vw;
+  color: #1C1C1BFF;
+}
+
+.about-title #me {
+  margin-left: 10px;
+  color: #CE4A7EFF;
 }
 
 @media (max-width: 600px) {
@@ -37,31 +30,13 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .about-title h1 {
     text-align: center;
     font-size: 2.5rem;
     color: black;
-    font-family: "Bebas Neue", cursive;
-  }
-  .about-title h1::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 5rem;
-    margin-top: 48px;
-    background: #facf0f;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    border-radius: 5px;
+    font-family: 'Concert One', cursive;
+    font-size: 36px;
   }
 }
 /*# sourceMappingURL=aboutTitle.css.map */

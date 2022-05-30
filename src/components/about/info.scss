@@ -1,44 +1,72 @@
-.about-info{
-      width: 50vw;
-      margin-top: 5em;
-      margin-left: 2em;
+.about-me{
+      display: flex;
+      justify-items: center;
+      justify-content: space-evenly;
+      width: 85vw;
+      .about-info{
+            width: 40vw;
+            margin-left: 2em;
       p{
            text-align: left;
-           font-family: 'Josefin Sans', sans-serif;
+           line-height: 1.7em;
+           font-family: 'DM Sans', sans-serif;
            margin-top: 1.5em;
            color: black;
+      }
+}
+}
+
+.about-img img{
+      margin-top: 2em;
+      width: 30em;
+      height: 20em;
+      border-top-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      &:hover{
+           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            transition: all .3s ease-in;
       }
 }
 
 @media (min-width: 600px) and (max-width: 1140px) {
-      .about-info{
-      width: 90vw;
-      margin-top: 5em;
-      margin-left: 2em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      p{
-           text-align: left;
-           font-family: 'Josefin Sans', sans-serif;
-           margin-top: 1.5em;
-           color: black;
+      .about-me{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            .about-info{
+                  width: 80vw;
+                  margin-top: 5em;
+                  margin-left: 2em;
+                  p{
+                        text-align: left;
+                        font-family: 'DM Sans', sans-serif;
+                        margin-top: 1.5em;
+                        color: black;
+                  }
+            }
       }
 }
-}
 @media (max-width: 600px){
-      .about-info{
-      width: 90vw;
-      margin-top: 5em;
-      margin-left: 1.5em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      p{
-           text-align: left;
-           font-family: 'Josefin Sans', sans-serif;
-           margin-top: 1.5em;
-           color: black;
+      .about-me{
+            display: flex;
+            flex-direction: column-reverse;
+            align-self: center;
+            .about-info{
+            width: 85vw;
+            margin-top: 5em;
+            margin-left: .5em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p{
+                 text-align: left;
+                 font-family: 'DM sans', sans-serif;
+                 margin-top: 1.5em;
+                 color: black;
+            }
+      }
+      .about-img img{
+            width: 85vw;
       }
 }
 }

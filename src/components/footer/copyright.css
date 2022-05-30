@@ -1,13 +1,19 @@
 p {
   color: white;
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  margin-top: 3em;
+  font-family: 'DM Sans', sans-serif;
+  margin-top: 0em;
 }
 
 @media (min-width: 600px) and (max-width: 1140px) {
   p {
-    margin-top: 1em;
+    margin-top: 0em;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+    color: white;
   }
 }
 /*# sourceMappingURL=copyright.css.map */

@@ -2,34 +2,39 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 3em;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 10em;
 }
 
 .contact-title h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 36px;
   color: black;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Concert One', cursive;
 }
 
-.contact-title h1::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 5rem;
-  margin-top: 55px;
-  background: #facf0f;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-radius: 5px;
+@media (min-width: 600px) and (max-width: 1140px) {
+  .contact-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 5em;
+  }
+  .contact-title h1 {
+    text-align: center;
+    font-size: 36px;
+    color: black;
+    font-family: 'Concert One', cursive;
+  }
 }
 
 @media (max-width: 600px) {
@@ -37,31 +42,18 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .contact-title h1 {
     text-align: center;
     font-size: 2.5rem;
     color: black;
     font-family: "Bebas Neue", cursive;
-  }
-  .contact-title h1::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 5rem;
-    margin-top: 48px;
-    background: #facf0f;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    border-radius: 5px;
   }
 }
 /*# sourceMappingURL=contactTitle.css.map */

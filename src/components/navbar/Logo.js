@@ -9,8 +9,9 @@ const Logo = () => {
         src={logo}
         alt=""
         className="logo"
-        data-aos="fade-right"
+        data-aos="fade-down-right"
         data-aos-delay="500"
+        data-aos-duration="1000"
       />
     </>
   );

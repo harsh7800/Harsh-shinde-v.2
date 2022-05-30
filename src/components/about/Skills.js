@@ -1,81 +1,77 @@
 import React from "react";
 import "./skills.css";
+import hmtl from './logo/html.png'
+import css from './logo/css.png'
+import javascript from './logo/javascript.png'
+import sass from './logo/sass.png'
+import git from './logo/git.png'
+import github from './logo/github.png'
+import bootstrap from './logo/bootstrap.png'
+import Reactjs from './logo/react.png'
+import afterEffects from './logo/after-effects.png'
+import premiere from './logo/premiere-pro.png'
+import mongoDB from './logo/MongoDB.png'
+import nodeJS from './logo/nodeJS.png'
 
 const Skills = () => {
   return (
     <>
-      <div className="skills-wrapper" data-aos="fade-left">
+      <div
+        className="skills-wrapper"
+        data-aos="zoom-in"
+        data-aos-delay="500"
+        data-aos-duration="500"
+      >
         <h2>Skills</h2>
         <div className="skills-container">
-          <a
-            id="skills"
-            href="https://www.w3schools.com/html/html_intro.asp"
-            target="blank"
-          >
+          <div id="skills">
+            <img src={hmtl} alt="" />
             <h3>HTML</h3>
-          </a>
-          <a id="skills" href="https://www.w3schools.com/css/" target="blank">
+          </div>
+          <div id="skills">
+            <img src={css} alt="" />
             <h3>CSS</h3>
-          </a>
-          <a id="skills" href="https://www.w3schools.com/js/" target="blank">
-            <h3>Java-script</h3>
-          </a>
-          <a
-            id="skills"
-            href="https://www.w3schools.com/sass/sass_intro.php"
-            target="blank"
-          >
+          </div>
+          <div id="skills">
+            <img src={javascript} id="js" alt="" />
+            <h3>Javascript</h3>
+          </div>
+          <div id="skills">
+            <img src={Reactjs} alt="" />
+            <h3>ReactJS</h3>
+          </div>
+          <div id="skills">
+            <img src={sass} id="sass" alt="" />
             <h3>SASS</h3>
-          </a>
-          <a
-            id="skills"
-            href="https://en.wikipedia.org/wiki/Git"
-            target="blank"
-          >
-            <h3>Git</h3>
-          </a>
-          <a
-            id="skills"
-            href="https://www.w3schools.com/REACT/DEFAULT.ASP"
-            target="blank"
-          >
-            <h3>React Js</h3>
-          </a>
-          <a
-            id="skills"
-            href="https://en.wikipedia.org/wiki/Git"
-            target="blank"
-          >
-            <h3>GitHub</h3>
-          </a>
-          <a
-            id="skills"
-            href="https://www.w3schools.com/bootstrap/"
-            target="blank"
-          >
+          </div>
+          <div id="skills">
+            <img src={git} alt="" />
+            <h3>git</h3>
+          </div>
+          <div id="skills">
+            <img src={github} alt="" />
+            <h3>Github</h3>
+          </div>
+          <div id="skills">
+            <img src={bootstrap} alt="" />
             <h3>Bootstrap</h3>
-          </a>
-          <a
-            id="skills"
-            href="https://www.w3schools.com/html/html_responsive.asp"
-            target="blank"
-          >
-            <h3>Responsiveness</h3>
-          </a>
-          <a
-            id="skills"
-            href="https://www.w3schools.com/html/html_responsive.asp"
-            target="blank"
-          >
+          </div>
+          <div id="skills">
+            <img src={mongoDB} alt="" />
+            <h3>mongoDB</h3>
+          </div>
+          <div id="skills">
+            <img src={nodeJS} alt="" id="nodejs"/>
+            <h3>NodeJS</h3>
+          </div>
+          <div id="skills">
+            <img src={premiere} id="PR" alt="" />
+            <h3>Premiere Pro</h3>
+          </div>
+          <div id="skills">
+            <img src={afterEffects} id="AE" alt="" />
             <h3>After Effects</h3>
-          </a>
-          <a
-            id="skills"
-            href="https://www.w3schools.com/html/html_responsive.asp"
-            target="blank"
-          >
-            <h3>Premiere pro</h3>
-          </a>
+          </div>
         </div>
       </div>
     </>

@@ -1,12 +1,18 @@
+.skills-wrapper {
+  margin-bottom: 3em;
+}
+
 .skills-wrapper h2 {
   text-align: center;
-  font-family: "Bebas Neue", cursive;
+  font-size: 36px;
+  font-family: 'Concert One', cursive;
   letter-spacing: 1px;
-  margin-left: -4em;
+  margin-top: 3em;
+  color: black;
 }
 
 .skills-wrapper .skills-container {
-  margin-top: 4em;
+  margin-top: 7em;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -16,70 +22,103 @@
       -ms-flex-align: center;
           align-items: center;
   margin-right: 5em;
-  -ms-grid-columns: 10vw 10vw 10vw;
-      grid-template-columns: 10vw 10vw 10vw;
-  grid-gap: 2em;
-  -ms-grid-rows: 40px 40px 40px 40px;
-      grid-template-rows: 40px 40px 40px 40px;
+  -ms-grid-columns: 4em 4em 4em 4em 4em 4em;
+      grid-template-columns: 4em 4em 4em 4em 4em 4em;
+  grid-gap: 7em;
+  -ms-grid-rows: 40px;
+      grid-template-rows: 40px;
 }
 
 .skills-wrapper .skills-container #skills {
-  text-align: left;
-  padding-top: .5em;
+  width: 8em;
+  height: 10em;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
   background-color: white;
-  color: black;
-  text-decoration: none;
-  border-radius: 15px;
-  height: 3em;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
 }
 
 .skills-wrapper .skills-container #skills:hover {
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.skills-wrapper .skills-container #skills img {
+  width: 4em;
+  margin-top: 1em;
+}
+
+.skills-wrapper .skills-container #skills #js {
+  width: 3em;
+}
+
+.skills-wrapper .skills-container #skills #AE {
+  width: 2.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.skills-wrapper .skills-container #skills #sass {
+  margin-bottom: .5em;
+}
+
+.skills-wrapper .skills-container #skills #PR {
+  width: 5.5em;
+  margin-bottom: .5em;
+}
+
+.skills-wrapper .skills-container #skills h3 {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.skills-wrapper .skills-container #skills #nodejs {
+  width: 5em;
+  margin-bottom: 1.5em;
 }
 
 @media (min-width: 600px) and (max-width: 1140px) {
   .skills-wrapper {
+    width: 85vw;
     margin-top: 2em;
   }
   .skills-wrapper h2 {
     text-align: center;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Concert One', cursive;
     letter-spacing: 1px;
     margin-top: 2em;
+    margin-left: 5%;
   }
   .skills-wrapper .skills-container {
+    margin-left: 5%;
+    width: 85vw;
     margin-top: 3em;
-    margin-left: 6em;
     display: -ms-grid;
     display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 5em;
-    -ms-grid-columns: 8em 8em 10em;
-        grid-template-columns: 8em 8em 10em;
-    grid-gap: 2em;
-    -ms-grid-rows: 40px 40px 40px 40px;
-        grid-template-rows: 40px 40px 40px 40px;
+    -ms-grid-columns: 20vw 20vw 20vw;
+        grid-template-columns: 20vw 20vw 20vw;
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    -ms-grid-rows: 8em 8em 8em 8em;
+        grid-template-rows: 8em 8em 8em 8em;
   }
   .skills-wrapper .skills-container #skills {
-    text-align: left;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+    text-align: center;
     padding-top: .5em;
-    background-color: white;
     color: black;
     text-decoration: none;
     border-radius: 15px;
-    height: 3em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  .skills-wrapper .skills-container #skills:hover {
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 10em;
+    font-family: 'DM sans', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    pointer-events: none;
   }
 }
 
@@ -89,14 +128,13 @@
   }
   .skills-wrapper h2 {
     text-align: center;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Concert One', cursive;
     letter-spacing: 1px;
     margin-top: 2em;
-    margin-left: -1em;
   }
   .skills-wrapper .skills-container {
     margin-top: 3em;
-    margin-left: 4em;
+    margin-left: 15%;
     display: -ms-grid;
     display: grid;
     -webkit-box-pack: center;
@@ -105,27 +143,25 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 5em;
-    -ms-grid-columns: 27vw 27vw 27vw;
-        grid-template-columns: 27vw 27vw 27vw;
-    grid-gap: 2em;
-    -ms-grid-rows: 40px 40px 40px 40px;
-        grid-template-rows: 40px 40px 40px 40px;
+    -ms-grid-columns: 20vw 20vw 20vw;
+        grid-template-columns: 20vw 20vw 20vw;
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    -ms-grid-rows: 8em 8em 8em 8em;
+        grid-template-rows: 8em 8em 8em 8em;
   }
   .skills-wrapper .skills-container #skills {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
     text-align: center;
     padding-top: .5em;
-    background-color: white;
     color: black;
     text-decoration: none;
     border-radius: 15px;
-    height: 3em;
+    height: 10em;
     font-size: .8em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  .skills-wrapper .skills-container #skills:hover {
-    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    pointer-events: none;
   }
 }
 /*# sourceMappingURL=skills.css.map */

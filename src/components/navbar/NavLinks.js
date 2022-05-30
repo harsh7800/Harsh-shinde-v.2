@@ -65,6 +65,9 @@ const NavBar = () => {
           </div>
           <span>
             <button
+              data-aos="fade-down-left"
+              data-aos-delay="500"
+              data-aos-duration="1000"
               className="menu"
               onClick={() => setShowMenu(!showMenu)}
             >

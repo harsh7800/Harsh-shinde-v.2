@@ -2,34 +2,22 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 3em;
+  font-family: 'Concert One', cursive;
 }
 
-.project-title h1 {
+.project-title #proj {
   text-align: center;
-  font-size: 3rem;
-  color: black;
-  font-family: "Bebas Neue", cursive;
+  font-size: 36px;
 }
 
-.project-title h1::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  width: 5rem;
-  margin-top: 55px;
-  background: #facf0f;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-radius: 5px;
+.project-title #ects {
+  text-align: center;
+  font-size: 36px;
+  color: #CE4A7EFF;
 }
 
 @media (max-width: 600px) {
@@ -37,31 +25,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .project-title h1 {
     text-align: center;
     font-size: 2.5rem;
     color: black;
-    font-family: "Bebas Neue", cursive;
-  }
-  .project-title h1::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    width: 5rem;
-    margin-top: 48px;
-    background: #facf0f;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    border-radius: 5px;
+    font-family: 'Concert One', cursive;
   }
 }
 /*# sourceMappingURL=projectTitle.css.map */

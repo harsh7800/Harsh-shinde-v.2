@@ -20,8 +20,6 @@ html, body {
   list-style: none;
   position: absolute;
   right: 1em;
-  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .navbar-container li {
@@ -60,7 +58,7 @@ html, body {
     z-index: 1000;
     height: 40em;
     width: 70vw;
-    left: 35em;
+    left: 40em;
     -webkit-transition: left ease-in .5s;
     transition: left ease-in .5s;
     position: fixed;
@@ -90,7 +88,7 @@ html, body {
     z-index: 1000;
     height: 40em;
     width: 70vw;
-    left: 10em;
+    left: 12em;
     -webkit-transition: left ease-in .5s;
     transition: left ease-in .5s;
     position: absolute;
@@ -103,7 +101,7 @@ html, body {
   .menu {
     display: block;
     position: fixed;
-    top: .8em;
+    top: .5em;
     right: 1em;
     cursor: pointer;
     border: none;
