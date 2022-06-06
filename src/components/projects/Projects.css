@@ -24,6 +24,9 @@
 }
 
 .projects-container #caseStudy {
+  text-decoration: none;
+  text-align: center;
+  color: black;
   width: 9em;
   height: 2.5em;
   border-radius: 20px;

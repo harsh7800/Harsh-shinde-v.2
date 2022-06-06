@@ -2,6 +2,7 @@
  width: 100vw;
 text-align: center;
 margin-top: 5em;
+mix-blend-mode: overlay;
   #projectsBtn {
     text-align: center;
     font-size: 1.8em;
@@ -10,10 +11,10 @@ margin-top: 5em;
     width: 5em;
     height: 2em;
     font-family: "Koulen", cursive;
-    background-color: rgb(54, 151, 186);
+    background-color: #7b57fe;
     cursor: pointer;
     &:hover{
-      box-shadow: 0px 0px 22px 5px rgba(65, 182, 224, 0.9);
+      box-shadow: 0px 0px 22px 5px#7b57fe;
       transition: box-shadow .2s ease-in;
     }
   }
@@ -30,14 +31,14 @@ margin-top: 5em;
       position: relative;
       left: 0em;
       transform: scaleX(1) scaleY(0.9) scaleZ(1) rotateX(0deg) rotateY(8deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
-      border: 2px solid rgb(54, 151, 186);
+      border: 2px solid #7b57fe;
       border-radius: 15px;
       width: 5em;
       height: 2em;
       font-family: 'Concert One', cursive;
       transition: transform 0.2s ease-in;
        &:hover{
-         box-shadow: 0px 0px 15px 5px rgb(54, 151, 186);
+         box-shadow: 0px 0px 15px 5px #7b57fe;
        }
     }
   }
@@ -50,19 +51,19 @@ margin-top: 5em;
     display: flex;
     justify-content: center;
     #projectsBtn {
-      background-color: rgb(54, 151, 186);
+      background-color: #7b57fe;
       font-size: 1.8em;
       position: relative;
       left: 0em;
       transform: scaleX(1) scaleY(0.9) scaleZ(1) rotateX(0deg) rotateY(8deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
-      border: 2px solid rgb(54, 151, 186);
+      border: 2px solid #7b57fe;
       border-radius: 15px;
       width: 5em;
       height: 2em;
       font-family: 'Concert One', cursive;
       transition: transform 0.2s ease-in;
        &:hover{
-         box-shadow: 0px 0px 15px 5px rgb(54, 151, 186);
+         box-shadow: 0px 0px 15px 5px #7b57fe;
        }
     }
   }

@@ -3,6 +3,7 @@
   color: white;
   text-align: center;
   margin-top: 2em;
+  mix-blend-mode: overlay;
 }
 
 .title p {
